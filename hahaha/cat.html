@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confession</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      background-image: url('https://i.imgur.com/WzYhY90.png'); /* Cute cat background */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .confession-box {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 15% auto;
+      padding: 30px;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    button {
+      font-size: 1.2em;
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #yesBtn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #noBtn {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="confession-box">
+    <h1>Hey, I like you a lot! Will you go out with me?</h1>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+
+    yesBtn.onclick = function() {
+      alert("Yay! I knew it! Let's go on a date!");
+    };
+
+    noBtn.onclick = function() {
+      alert("No? Hmm... just kidding! That's a YES!");
+    };
+  </script>
+</body>
+</html>
